@@ -30,7 +30,7 @@ const AddProperty = () => {
 
     console.log("Base URL:", baseUrl); // Should log the base URL
     console.log("Full URL:", fullUrl);
-    fetch(`${process.env.REACT_APP_BASE_URL}addProperties`, {
+    fetch(`https://my-rentify-5.onrender.com/api/addProperties`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

@@ -21,7 +21,7 @@ const Home = () => {
     });
   };
   useEffect(() => {
-    fetch(`${process.env.BASE_URL}getAllProperties`)
+    fetch(`https://my-rentify-5.onrender.com/api/getAllProperties`)
       .then((result) => {
         return result.json();
       })

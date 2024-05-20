@@ -14,7 +14,7 @@ const NavBar = ({ showToast }) => {
   }, []);
 
   const handleLogout = () => {
-    fetch("http://localhost:4000/logout", {
+    fetch("https://my-rentify-5.onrender.com/api/logout", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

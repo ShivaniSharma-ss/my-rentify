@@ -11,7 +11,7 @@ const SellerProperties = () => {
     if (!userDetails) {
       navigate("/login");
     }
-    fetch(`${process.env.BASE_URL}getMyProperties`, {
+    fetch(`https://my-rentify-5.onrender.com/api/getMyProperties`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

@@ -82,7 +82,7 @@ const SignUp = () => {
       return;
     }
 
-    fetch(`${process.env.BASE_URL}addUser`, {
+    fetch(`https://my-rentify-5.onrender.com/api/addUser`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(userBody),

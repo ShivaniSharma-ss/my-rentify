@@ -58,7 +58,7 @@ const Login = () => {
       password,
     };
 
-    fetch(`${process.env.BASE_URL}login`, {
+    fetch(`https://my-rentify-5.onrender.com/api/login`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

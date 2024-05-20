@@ -11,12 +11,15 @@ const SellerDetails = () => {
     phoneNumber: "",
   });
   useEffect(() => {
-    fetch(`${process.env.BASE_URL}getSellerDetails?email=${email}`, {
-      headers: {
-        "Content-Type": "application/json",
-        Authorization: `Bearer ${localStorage.getItem("token")}`,
-      },
-    })
+    fetch(
+      `https://my-rentify-5.onrender.com/api/getSellerDetails?email=${email}`,
+      {
+        headers: {
+          "Content-Type": "application/json",
+          Authorization: `Bearer ${localStorage.getItem("token")}`,
+        },
+      }
+    )
       .then((data) => {
         return data.json();
       })
