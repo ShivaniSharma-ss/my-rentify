@@ -21,7 +21,7 @@ const Home = () => {
     });
   };
   useEffect(() => {
-    fetch("http://localhost:4000/api/getAllProperties")
+    fetch(`${process.env.BASE_URL}getAllProperties`)
       .then((result) => {
         return result.json();
       })

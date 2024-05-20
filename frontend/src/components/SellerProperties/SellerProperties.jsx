@@ -11,7 +11,7 @@ const SellerProperties = () => {
     if (!userDetails) {
       navigate("/login");
     }
-    fetch("http://localhost:4000/api/getMyProperties", {
+    fetch(`${process.env.BASE_URL}getMyProperties`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

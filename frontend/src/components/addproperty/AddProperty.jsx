@@ -25,7 +25,12 @@ const AddProperty = () => {
     e.preventDefault();
     const userEmail = JSON.parse(localStorage.getItem("userDetails")).email;
     form.userEmail = userEmail;
-    fetch("http://localhost:4000/api/addProperties", {
+    const baseUrl = process.env;
+    const fullUrl = `${baseUrl}addProperties`;
+
+    console.log("Base URL:", baseUrl); // Should log the base URL
+    console.log("Full URL:", fullUrl);
+    fetch(`${process.env.REACT_APP_BASE_URL}addProperties`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

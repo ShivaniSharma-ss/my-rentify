@@ -58,7 +58,7 @@ const Login = () => {
       password,
     };
 
-    fetch(`http://localhost:4000/api/login`, {
+    fetch(`${process.env.BASE_URL}login`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

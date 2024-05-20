@@ -11,7 +11,7 @@ const SellerDetails = () => {
     phoneNumber: "",
   });
   useEffect(() => {
-    fetch(`http://localhost:4000/api/getSellerDetails?email=${email}`, {
+    fetch(`${process.env.BASE_URL}getSellerDetails?email=${email}`, {
       headers: {
         "Content-Type": "application/json",
         Authorization: `Bearer ${localStorage.getItem("token")}`,
