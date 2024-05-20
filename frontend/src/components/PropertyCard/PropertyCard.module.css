@@ -1,0 +1,88 @@
+.propertyCard {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  max-width: 600px;
+  width: 100%;
+  margin: 20px auto;
+}
+
+.title {
+  font-size: 1.2em;
+  margin: 0 0 10px;
+}
+
+.location {
+  color: #666;
+  font-size: 0.9em;
+  margin: 0 0 20px;
+}
+
+.details {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.rent,
+.deposit,
+.size {
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+.label {
+  display: block;
+  font-size: 0.8em;
+  color: #666;
+}
+
+.imageContainer {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.image {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.info > div {
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  margin-right: 5px;
+}
+
+.getOwnerDetails {
+  width: 100%;
+  background-color: #ff5722;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.nearby {
+  font-size: 0.9em;
+}
+
+.nearbyPlaces span {
+  display: inline-block;
+  background-color: #f1f1f1;
+  padding: 5px;
+  border-radius: 3px;
+  margin: 3px 0;
+}
