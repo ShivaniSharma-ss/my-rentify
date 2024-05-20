@@ -46,10 +46,7 @@ const SignUp = () => {
   };
   const handleSignUp = (e) => {
     e.preventDefault();
-    let userBody = {
-      name: user.username,
-      email: user.email,
-    };
+
     if (user.firstName.length < 3) {
       setError({
         isError: true,
@@ -85,7 +82,7 @@ const SignUp = () => {
     fetch(`https://my-rentify-5.onrender.com/api/addUser`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(userBody),
+      body: JSON.stringify(user),
     })
       .then((res) => res.json())
       .then((data) => {
