@@ -8,7 +8,7 @@ const bodyParser = require("body-parser");
 
 const routes = require("./routes");
 const corsOptions = {
-  origin: "*",
+  origin: "https://my-rentify-5.onrender.com",
   credentials: true, //access-control-allow-credentials:true
   optionSuccessStatus: 200,
 };
