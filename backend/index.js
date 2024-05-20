@@ -8,8 +8,8 @@ const bodyParser = require("body-parser");
 
 const routes = require("./routes");
 const corsOptions = {
-  origin: "https://frontend-4n5p.onrender.com",
-  credentials: true, //access-control-allow-credentials:true
+  origin: "*", // Allow requests from all origins
+  credentials: true, // Access-Control-Allow-Credentials:true
   optionSuccessStatus: 200,
 };
 const app = express();
